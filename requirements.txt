@@ -1,0 +1,15 @@
+# GPU training worker dependencies.
+#
+# The RTX PRO 4000 Blackwell is compute capability sm_120, which only recent
+# CUDA builds of PyTorch support. Install torch/torchvision from the cu128
+# wheel index (older cu121 wheels will fail with "no kernel image available").
+# See SETUP.md for the full, step-by-step environment setup.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch
+torchvision
+ultralytics
+numpy
+opencv-python-headless
+Pillow
+requests
+python-dotenv
